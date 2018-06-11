@@ -21,7 +21,7 @@
 if($message == "ชื่ออะไร"){
         $arrayPostData['replyToken'] = $arrayJson['events'][0]['replyToken'];
         $arrayPostData['messages'][0]['type'] = "text";
-        $arrayPostData['messages'][0]['text'] = "เสือก ไม่ต้องถาม";
+        $arrayPostData['messages'][0]['text'] = "เสือกไม่ต้องถาม";
         replyMsg($arrayHeader,$arrayPostData);
     }
     #ตัวอย่าง Message Type "Sticker"
