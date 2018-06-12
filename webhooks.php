@@ -18,6 +18,18 @@
         $arrayPostData['messages'][0]['text'] = "สวัสดีจ้าาา";
         replyMsg($arrayHeader,$arrayPostData);
     }
+    else if($message == "หวัดดี"){
+        $arrayPostData['replyToken'] = $arrayJson['events'][0]['replyToken'];
+        $arrayPostData['messages'][0]['type'] = "text";
+        $arrayPostData['messages'][0]['text'] = "หวัดจ้า";
+        replyMsg($arrayHeader,$arrayPostData);
+    }
+    else if($message == "ดี"){
+        $arrayPostData['replyToken'] = $arrayJson['events'][0]['replyToken'];
+        $arrayPostData['messages'][0]['type'] = "text";
+        $arrayPostData['messages'][0]['text'] = "ดีจ้าา";
+        replyMsg($arrayHeader,$arrayPostData);
+    }
     else if($message == "ชื่ออะไร"){
         $arrayPostData['replyToken'] = $arrayJson['events'][0]['replyToken'];
         $arrayPostData['messages'][0]['type'] = "text";
@@ -27,7 +39,13 @@
     else if($message == "ทำอะไรอยู่"){
         $arrayPostData['replyToken'] = $arrayJson['events'][0]['replyToken'];
         $arrayPostData['messages'][0]['type'] = "text";
-        $arrayPostData['messages'][0]['text'] = "มาดูเองดิ!!! อย่าเอาแต่ถาม";
+        $arrayPostData['messages'][0]['text'] = "มาดูเองดิ!!! ใช้หัวคิดบ้าง";
+        replyMsg($arrayHeader,$arrayPostData);
+    }
+     else if($message == "ทำไรอ่ะ"){
+        $arrayPostData['replyToken'] = $arrayJson['events'][0]['replyToken'];
+        $arrayPostData['messages'][0]['type'] = "text";
+        $arrayPostData['messages'][0]['text'] = "มาดูเองดิ!!! อย่าเอาแต่ถามฟาย";
         replyMsg($arrayHeader,$arrayPostData);
     }
     else if($message == "อย่า"){
@@ -42,12 +60,54 @@
         $arrayPostData['messages'][0]['text'] = "เป็นง่อยอ่อ.....";
         replyMsg($arrayHeader,$arrayPostData);
     }
+       else if($message == "ฝากครับ"){
+        $arrayPostData['replyToken'] = $arrayJson['events'][0]['replyToken'];
+        $arrayPostData['messages'][0]['type'] = "text";
+        $arrayPostData['messages'][0]['text'] = "เป็นง่อยอ่อ.....สมอง";
+        replyMsg($arrayHeader,$arrayPostData);
+    }
     else if($message == "555"){
+        $arrayPostData['replyToken'] = $arrayJson['events'][0]['replyToken'];
+        $arrayPostData['messages'][0]['type'] = "text";
+        $arrayPostData['messages'][0]['text'] = "พ่อมรึงเป็นตลกอ่อ";
+        replyMsg($arrayHeader,$arrayPostData);
+    }
+    else if($message == "55"){
+        $arrayPostData['replyToken'] = $arrayJson['events'][0]['replyToken'];
+        $arrayPostData['messages'][0]['type'] = "text";
+        $arrayPostData['messages'][0]['text'] = "555555 ขำควยไรสัดตลกอ่อ";
+        replyMsg($arrayHeader,$arrayPostData);
+    }
+    else if($message == "5555"){
+        $arrayPostData['replyToken'] = $arrayJson['events'][0]['replyToken'];
+        $arrayPostData['messages'][0]['type'] = "text";
+        $arrayPostData['messages'][0]['text'] = "ไปเล่นตรงนู้นไป ";
+        replyMsg($arrayHeader,$arrayPostData);
+    }
+    else if($message == "55555"){
         $arrayPostData['replyToken'] = $arrayJson['events'][0]['replyToken'];
         $arrayPostData['messages'][0]['type'] = "text";
         $arrayPostData['messages'][0]['text'] = "555555 ขำควยไรสัด";
         replyMsg($arrayHeader,$arrayPostData);
     }
+    else if($message == "อยู่ไหนครับ"){
+        $arrayPostData['replyToken'] = $arrayJson['events'][0]['replyToken'];
+        $arrayPostData['messages'][0]['type'] = "text";
+        $arrayPostData['messages'][0]['text'] = "อยู่บนหัวพ่องมรึงอ่ะสัด";
+        replyMsg($arrayHeader,$arrayPostData);
+    }
+    else if($message == "สัด"){
+        $arrayPostData['replyToken'] = $arrayJson['events'][0]['replyToken'];
+        $arrayPostData['messages'][0]['type'] = "text";
+        $arrayPostData['messages'][0]['text'] = "สัดพ่อมรึงอ่ะดิ ด่าทันกรูป่าว";
+        replyMsg($arrayHeader,$arrayPostData);
+    } 
+    else if($message == "เหี้ย"){
+        $arrayPostData['replyToken'] = $arrayJson['events'][0]['replyToken'];
+        $arrayPostData['messages'][0]['type'] = "text";
+        $arrayPostData['messages'][0]['text'] = "เหี้ยแม่มรึงอ่ะดิ";
+        replyMsg($arrayHeader,$arrayPostData);
+    }   
     #ตัวอย่าง Message Type "Sticker"
     else if($message == "ฝันดี"){
         $arrayPostData['replyToken'] = $arrayJson['events'][0]['replyToken'];
