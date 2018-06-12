@@ -21,7 +21,7 @@
     else if($message == "หวัดดี"){
         $arrayPostData['replyToken'] = $arrayJson['events'][0]['replyToken'];
         $arrayPostData['messages'][0]['type'] = "text";
-        $arrayPostData['messages'][0]['text'] = "หวัดจ้า";
+        $arrayPostData['messages'][0]['text'] = "หวัดดีจ้า";
         replyMsg($arrayHeader,$arrayPostData);
     }
     else if($message == "ดี"){
