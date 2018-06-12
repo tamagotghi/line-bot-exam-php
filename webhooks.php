@@ -18,7 +18,7 @@
         $arrayPostData['messages'][0]['text'] = "สวัสดีจ้าาา";
         replyMsg($arrayHeader,$arrayPostData);
     }
-    else if($message == "ชื่ออะไร","ชื่อไร","ชื่อไรอ่ะ"){
+    else if($message == "ชื่ออะไร"){
         $arrayPostData['replyToken'] = $arrayJson['events'][0]['replyToken'];
         $arrayPostData['messages'][0]['type'] = "text";
         $arrayPostData['messages'][0]['text'] = "เสือกไม่ต้องถาม";
@@ -42,7 +42,7 @@
         $arrayPostData['messages'][0]['text'] = "เป็นง่อยอ่อ.....";
         replyMsg($arrayHeader,$arrayPostData);
     }
-    else if($message == "555","55555","55555","55"){
+    else if($message == "555"){
         $arrayPostData['replyToken'] = $arrayJson['events'][0]['replyToken'];
         $arrayPostData['messages'][0]['type'] = "text";
         $arrayPostData['messages'][0]['text'] = "555555 ขำควยไรสัด";
