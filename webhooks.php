@@ -172,3 +172,15 @@ function replyMsg($arrayHeader,$arrayPostData){
     }
    exit;
 ?>
+<?php
+    $string = "hellothailand";
+    $findword = "th";
+    $pos = storpos ($string,$findword);
+    if ($pos !== FALSE)
+    {
+        echo "FIND OUT !!!";
+    }else
+    {
+        echo "unfound";
+    }
+?>
