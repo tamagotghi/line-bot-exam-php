@@ -42,7 +42,7 @@
         $arrayPostData['messages'][0]['text'] = "เป็นง่อยอ่อ.....";
         replyMsg($arrayHeader,$arrayPostData);
     }
-    else if($message == "555","55555",55555",55"){
+    else if($message == "555","55555","55555","55"){
         $arrayPostData['replyToken'] = $arrayJson['events'][0]['replyToken'];
         $arrayPostData['messages'][0]['type'] = "text";
         $arrayPostData['messages'][0]['text'] = "555555 ขำควยไรสัด";
