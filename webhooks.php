@@ -18,10 +18,34 @@
         $arrayPostData['messages'][0]['text'] = "สวัสดีจ้าาา";
         replyMsg($arrayHeader,$arrayPostData);
     }
-    else if($message == "ชื่ออะไร,ชื่อไร,ชื่อไรอ่ะ"){
+    else if($message == "ชื่ออะไร","ชื่อไร","ชื่อไรอ่ะ"){
         $arrayPostData['replyToken'] = $arrayJson['events'][0]['replyToken'];
         $arrayPostData['messages'][0]['type'] = "text";
         $arrayPostData['messages'][0]['text'] = "เสือกไม่ต้องถาม";
+        replyMsg($arrayHeader,$arrayPostData);
+    }
+    else if($message == "ทำอะไรอยู่"){
+        $arrayPostData['replyToken'] = $arrayJson['events'][0]['replyToken'];
+        $arrayPostData['messages'][0]['type'] = "text";
+        $arrayPostData['messages'][0]['text'] = "มาดูเองดิ!!! อย่าเอาแต่ถาม";
+        replyMsg($arrayHeader,$arrayPostData);
+    }
+    else if($message == "อย่า"){
+        $arrayPostData['replyToken'] = $arrayJson['events'][0]['replyToken'];
+        $arrayPostData['messages'][0]['type'] = "text";
+        $arrayPostData['messages'][0]['text'] = "อย่า!! อะไร พูดให้รู้เรื่องหน่อย";
+        replyMsg($arrayHeader,$arrayPostData);
+    }
+    else if($message == "ฝากด้วยครับ"){
+        $arrayPostData['replyToken'] = $arrayJson['events'][0]['replyToken'];
+        $arrayPostData['messages'][0]['type'] = "text";
+        $arrayPostData['messages'][0]['text'] = "เป็นง่อยอ่อ.....";
+        replyMsg($arrayHeader,$arrayPostData);
+    }
+    else if($message == "555","55555",55555",55"){
+        $arrayPostData['replyToken'] = $arrayJson['events'][0]['replyToken'];
+        $arrayPostData['messages'][0]['type'] = "text";
+        $arrayPostData['messages'][0]['text'] = "555555 ขำควยไรสัด";
         replyMsg($arrayHeader,$arrayPostData);
     }
     #ตัวอย่าง Message Type "Sticker"
