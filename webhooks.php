@@ -33,7 +33,19 @@
     else if($message == "ชื่ออะไร"){
         $arrayPostData['replyToken'] = $arrayJson['events'][0]['replyToken'];
         $arrayPostData['messages'][0]['type'] = "text";
-        $arrayPostData['messages'][0]['text'] = "เสือกไม่ต้องถาม";
+        $arrayPostData['messages'][0]['text'] = "BOT LINE ครับผม";
+        replyMsg($arrayHeader,$arrayPostData);
+    }
+    else if($message == "ชื่อไร"){
+        $arrayPostData['replyToken'] = $arrayJson['events'][0]['replyToken'];
+        $arrayPostData['messages'][0]['type'] = "text";
+        $arrayPostData['messages'][0]['text'] = "ฺเสือกไม่ต้องถาม";
+        replyMsg($arrayHeader,$arrayPostData);
+    }
+    else if($message == "ชื่อไรอ่ะ"){
+        $arrayPostData['replyToken'] = $arrayJson['events'][0]['replyToken'];
+        $arrayPostData['messages'][0]['type'] = "text";
+        $arrayPostData['messages'][0]['text'] = "ฺถามกี่รอบละสัด ไม่ฟังเลยไง๋สึด";
         replyMsg($arrayHeader,$arrayPostData);
     }
     else if($message == "ทำอะไรอยู่"){
